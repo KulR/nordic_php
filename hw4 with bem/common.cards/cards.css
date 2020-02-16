@@ -1,0 +1,6 @@
+@import "card/card.css";
+
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+}

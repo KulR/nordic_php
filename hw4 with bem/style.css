@@ -1,0 +1,248 @@
+@import 'reset.css';
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display|Roboto&display=swap');
+@import "common.logo/logo.css";
+@import "common.soc-icons/soc-icons.css";
+@import "common.cards/cards.css";
+@import "common.footer/footer.css";
+
+:root{
+    --main-bg-color: #010325;
+    --second-bg-color: #2148A8;
+    --light-color: #6F81A5;
+    --prime-color: #F4EFCF;
+    --danger-color: #F15B4A;
+    --font-header: 'Playfair Display', serif;
+    --font-parag : 'Roboto', sans-serif;
+    --size-parag: 18px;
+    --size-header: 32px;
+}
+.wrapper{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.header{
+    background-color: var(--main-bg-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 90px;
+    padding: 5px 20px;
+}
+
+.header__logo {
+    width: 75px; 
+    height: 75px;
+}
+
+.nav{
+    width: 500px;
+    /*width: 50%;*/
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav__a{
+    text-decoration: none;
+    font-size: var(--size-header);
+    color:white;
+    font-weight: bold;
+}
+
+.promo{
+    background-image: url("img/main.jpg");
+    height: 80vh;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+.promo__h1{
+    font-size:calc(var(--size-header) * 1.2);
+    color: white;
+    font-weight: bold;
+    font-family: var(--font-header);
+}
+.promo__button{
+    background-color: var(--danger-color);
+    color: white;
+    font-size:calc(var(--size-header) /1.2);
+    padding: 15px;
+    border-radius: 7px;
+    margin-top: 20px;
+    font-family: var(--font-parag);
+}
+.promo__button:hover{
+    cursor: pointer;
+    background-color: white;
+    color:var(--danger-color);
+    transition: all 0.5s;
+}
+
+/* soc icon */
+.soc-icons{
+    width: 300px;
+    align-self: flex-end;
+    position: absolute;
+    /*top: 30%;*/
+    bottom: 10px;
+    right: 0;
+}
+
+/* end soc icon */
+
+.banner-header{
+    height: 90px;
+    background-color: var(--main-bg-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner-header__h3 {
+    font-family: var(--font-header);
+    font-size: var(--size-header);
+    color: var(--prime-color);
+}
+
+.info{
+     border: 2px solid var(--main-bg-color);
+    padding: 80px 80px 40px 80px;
+}
+
+.info__p{
+    text-indent: 1em;
+    margin-bottom: 40px;
+    font-family: var(--font-parag);
+    font-size: var(--size-parag);
+    line-height: 1.3;
+}
+
+.reasons {
+    /*display: flex;*/
+    /*justify-content: center;*/
+    border: 2px solid var(--main-bg-color);
+    padding: 20px 0;
+}
+
+.reasons__ul {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.reasons__li {
+    font-size: var(--size-header);
+    line-height: 1.3;
+    /*list-style-type: circle;*/
+}
+
+.reasons__li:before{
+    margin-right: 10px;
+}
+
+.reasons__li:nth-child(1):before{
+    content: "💰";
+}
+
+.reasons__li:nth-child(2):before{
+    content: "🐱";
+}
+
+.reasons__li:nth-child(3):before{
+    content: "🍜";
+}
+
+.reasons__li:nth-child(4):before{
+    content: "🇷🇺";
+}
+
+.reasons__li:nth-child(5):before{
+    content: "🧸";
+}
+
+.reasons__ul:after{
+    content: "";
+    display: flex;
+    margin: 0 auto;
+    height: 200px;
+    width: 200px;
+    background-image: url("img/island.jpg");
+    background-size: cover;
+}
+
+
+
+
+/* cards */
+
+.card{
+    box-sizing: border-box;
+    width: 33.333%;
+    border-color: var(--main-bg-color);
+}
+
+.card__header{
+    font-family: var(--font-header);
+    font-size: calc(var(--size-header) /1.2);
+}
+
+.card__info{
+    font-family: var(--font-parag);
+    font-size: calc(var(--size-parag) );
+}
+
+.card__line{
+    background-color: var(--danger-color);
+}
+
+
+/* end cards*/
+
+
+/* common.footer */
+
+.footer{
+    background-color: var(--main-bg-color);
+    /*padding: 40px;*/
+}
+
+.contacts{
+    height: 120px;
+    color: var(--prime-color);
+    font-family: var(--font-parag);
+    font-size: calc(var(--size-parag) / 1.5);
+}
+
+.contacts__header{
+    font-size: calc(var(--size-header) /1.5);
+    color: var(--danger-color);
+}
+
+.contacts__address{
+    color: var(--danger-color);
+}
+
+.contacts__anchor{
+    color: var(--prime-color);
+}
+
+.footer__logo{
+    width: 120px;
+    height: 120px;
+}
+
+.third-party-sites{
+    height: 120px;
+}
+
+.third-party-sites__site{
+    font-family: var(--font-parag);
+    font-size: var(--size-parag);
+    color: var(--prime-color);
+}
+
+/* end common.footer */

@@ -1,0 +1,9 @@
+@import "third-party-sites__site/third-party-sites__site.css";
+
+.third-party-sites{
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: right;
+}
