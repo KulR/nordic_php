@@ -1,0 +1,9 @@
+.card__header{
+    display: flex;
+    align-items: center;
+    font-family: serif;
+    font-size: 24px;
+    text-align: center;
+    height: 2.5em;                                  /* to align card__line  */
+    padding: 15px 0;
+}

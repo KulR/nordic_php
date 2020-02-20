@@ -1,0 +1,11 @@
+@import "contacts/contacts.css";
+@import "logo/logo.css";
+@import "third-party-sites/third-party-sites.css";
+
+.footer{
+    background-color: black;
+    padding: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

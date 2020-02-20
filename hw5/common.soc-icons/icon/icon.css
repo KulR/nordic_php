@@ -1,0 +1,10 @@
+@import "_type/icon_type_face.css";
+@import "_type/icon_type_inst.css";
+@import "_type/icon_type_vk.css";
+
+.soc-icons__icon{
+    background-size: contain;
+    background-position: center center;
+    width: 45px;
+    height: 45px;
+}

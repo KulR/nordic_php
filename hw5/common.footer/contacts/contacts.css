@@ -1,0 +1,14 @@
+@import "__header/contacts__header.css";
+@import "__anchor/contacts__anchor.css";
+@import "__address/contacts__address.css";
+@import "__span/contacts__span.css";    /* hmmm, do I really need it?*/
+
+.contacts{
+    height: 120px;
+    color: white;
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}

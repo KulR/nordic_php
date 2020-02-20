@@ -1,0 +1,13 @@
+@import "icon/icon.css";
+
+.soc-icons{
+    display: flex;
+    justify-content: space-around;
+    width: 200px;
+    /*!*position: absolute;*!*/
+    /*!*bottom: 50px;*!*/
+    /*!*right: 100px;*!*/
+    /*align-self: flex-end;*/
+    /*position: relative;*/
+    /*top: 30%;*/
+}
